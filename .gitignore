@@ -1,2 +1,4 @@
 #ÉÏ´«Ê±ºöÂÔ
-.exe
+*.exe
+.gitattributes
+.gitignore
