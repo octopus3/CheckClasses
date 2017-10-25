@@ -9,7 +9,7 @@ int main()
 	//下面先写按用户查询
 	printf("Input the user you want to see: wuzhihong\n");
 	//现在跳过判断用户阶段，默认wuzhihong
-	//等一下在这边插入个user=wuzhihong，字符串是真的迷，不会
+	//等一下在这边插入个user=wuzhihong，字符串是真的迷，不会,这里引入头文件string.h，使用strcpy()函数就可以实现
 
 /*
 	printf("请输入要查询的周数（从5-17）: ");
