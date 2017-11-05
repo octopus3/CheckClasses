@@ -1,6 +1,17 @@
 #include <stdio.h>
+#include <string.h>
+void stringcopy(char user[100][],char username[])
+{
+	int i;
+	for(i = 0;i<100;i++)
+	{
+	strcpy(user[i],username);//得到用户输入的字符串拷贝，将其赋值到user数组的行中
+	}
+}
 int main()
 {
+	char user[100][30];//用于存放多个人名
+	char username[30];//定义用户名
 	printf("*** This is a program still Building ***\n");
 	int week=0, date=0, time=0;
 	//现在定义所有用户的数据，先定义一个我的数据，有课为0，无课为1
@@ -10,7 +21,8 @@ int main()
 	printf("Input the user you want to see: wuzhihong\n");
 	//现在跳过判断用户阶段，默认wuzhihong
 	//等一下在这边插入个user=wuzhihong，字符串是真的迷，不会,(这里引入头文件string.h，使用strcpy()函数就可以实现----章鱼)
-
+	gets(username);
+	stringcopy(user,username);
 /*
 	printf("请输入要查询的周数（从5-17）: ");
 	scanf("%d",&week);
